@@ -805,14 +805,18 @@
 .image-preview-container {
     display: none;
     margin-top: 5px;
-    padding: 5px;
     border-radius: 5px;
-    border-width: 1px;
     border-color: rgb(180, 180, 180);
 }
 
 .image-preview-container, .image-item, .image-image {
     align-self: flex-start;
+}
+
+.image-item {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 #cancel_tasks {

@@ -9,11 +9,7 @@
                 <ui:Label name="auto_approve_count_label" text="Coplay has auto-approved N API requests. Would you like to reset the count and proceed with the task?" style="white-space: normal; margin-bottom: 10px;" />
                 <ui:Button text="Proceed" name="proceed_button" style="align-self: flex-start; padding: 5px 15px;" />
             </ui:VisualElement>
-            <ui:VisualElement name="image_preview" class="image-preview-container">
-                <ui:VisualElement name="image_item" class="image-item">
-                    <ui:VisualElement name="image_image" class="image-image" />
-                </ui:VisualElement>
-            </ui:VisualElement>
+            <ui:VisualElement name="image_preview" class="image-preview-container" />
             <ui:VisualElement name="feedback_buttons" style="flex-direction: row; justify-content: flex-end; margin-top: 5px; display: none;">
                 <ui:Button name="like_button" text="\uf164;" parse-escape-sequences="true" tooltip="This was helpful" />
                 <ui:Button name="dislike_button" text="\uf165;" parse-escape-sequences="true" tooltip="This was not helpful" />
