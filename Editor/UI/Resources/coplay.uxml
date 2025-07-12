@@ -66,7 +66,7 @@
         <!-- Progress Bar -->
         <ui:VisualElement style="flex-grow: 0; flex-shrink: 0; flex-direction: row; align-items: center;">
             <ui:ProgressBar name="progress_bar" style="flex-grow: 1;" />
-            <ui:Button text="X" name="cancel_tasks" style="width: 10px; height: 10px;" />
+            <ui:Button text="✕ Cancel" parse-escape-sequences="true" name="cancel_tasks" />
         </ui:VisualElement>
         <!-- Status Bar -->
         <ui:Label tabindex="-1" text="Status..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="status" style="-unity-text-align: middle-center; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; color: rgb(101, 100, 100);" />
