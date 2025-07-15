@@ -1,3 +1,22 @@
+:root {
+    --coplay-small-font: 10px;
+    --coplay-font: 12px;
+    --coplay-medium-font: 14px;
+    --coplay-large-font: 16px;
+    --coplay-xlarge-font: 24px;
+}
+
+/* Font size utility classes for proportional scaling */
+.font-small { font-size: var(--coplay-small-font); }
+.font-default { font-size: var(--coplay-font); }
+.font-medium { font-size: var(--coplay-medium-font); }
+.font-large { font-size: var(--coplay-large-font); }
+.font-xlarge { font-size: var(--coplay-xlarge-font); }
+
+Label, TextField, Button, Toggle, Slider, IntegerField {
+    font-size: var(--coplay-font);
+}
+
 #mode VisualElement, #model VisualElement {
     background-color: rgba(0, 0, 0, 0);
 }
@@ -188,10 +207,19 @@
     cursor: Link;
 }
 
-#submit {
+#submit.stop-button {
     -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
     -unity-font-definition: initial;
     font-size: 24px;
+    color: #D9534F;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 0px;
+}
+
+#submit {
+    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
+    -unity-font-definition: initial;
     border-left-color: rgba(149, 149, 149, 0);
     border-right-color: rgba(149, 149, 149, 0);
     border-top-color: rgba(149, 149, 149, 0);
@@ -216,7 +244,6 @@
     border-bottom-color: rgba(149, 149, 149, 0);
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 16px;
     cursor: Link;
 }
 
@@ -229,25 +256,10 @@
 }
 
 #add_attachment {
-    margin-top: 3px;
-    margin-left: 0;
-    font-size: 10px;
+    margin: 3px;
+    margin-left: 0px;
     height: 20px;
-    width: 118px;
-}
-
-#context_selection {
-    width: 118px;
-    border-width: 1px;
-    padding-left: 5px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 3px;
-    margin-top: 3px;
-    margin-right: 5px;
-    border-radius: 3px;
-    font-size: 10px;
-    height: 20px;
+    width: 120px;
 }
 
 #recording_selection {
@@ -260,7 +272,6 @@
     margin-top: 0;
     margin-right: 5px;
     border-radius: 3px;
-    font-size: 10px;
     height: 20px;
 }
 
@@ -295,12 +306,18 @@
     cursor: Link;
 }
 
+#feedback_buttons {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 5px;
+    display: none;
+}
+
 /* Feedback toggle styling */
 #feedback_buttons Button {
     border-width: 0;
     margin: 0;
     padding: 2px 8px;
-    font-size: 14px;
     -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
     -unity-font-definition: initial;
     background-color: rgba(0,0,0,0);
@@ -350,7 +367,6 @@
 }
 
 .text-edit-dialog-title {
-    font-size: 16px;
     -unity-font-style: bold;
     margin-bottom: 10px;
 }
@@ -489,7 +505,6 @@
 
 .drag-ghost-text {
     -unity-text-align: middle-left;
-    font-size: 12px;
     -unity-font-style: normal;
     white-space: nowrap;
     overflow: hidden;
@@ -542,7 +557,7 @@
 }
 
 .history_item #thread_created_at {
-    font-size: 12px;
+    font-size: var(--coplay-font);
 }
 
 .code-block {
@@ -628,7 +643,6 @@
     -unity-text-align: upper-center;
     white-space: normal;
     -unity-font-style: bold;
-    font-size: 16px;
 }
 
 .primary-button {
@@ -676,7 +690,7 @@
 }
 
 .screenshot-label {
-    font-size: 12px;
+    font-size: var(--coplay-font);
     margin-bottom: 3px;
 }
 
@@ -758,7 +772,6 @@
 }
 
 #save_recording_dialog .dialog-title {
-    font-size: 16px;
     -unity-font-style-and-weight: bold;
     margin-bottom: 10px;
 }
@@ -834,4 +847,13 @@
 
 .pending-approval .code-block {
     opacity: 0.8;
+}
+
+#orchestrator_instructions {
+    display: none;
+    white-space: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
 }

@@ -1,3 +1,7 @@
+Label, TextField, Button, Toggle, Slider, IntegerField {
+    font-size: var(--coplay-font);
+}
+
 #chat_message #unity-text-input {
     -unity-background-image-tint-color: rgba(250, 0, 0, 0);
     background-color: rgba(91, 91, 91, 0.65);
@@ -118,14 +122,6 @@
 }
 
 #add_attachment:hover {
-    background-color: rgba(0, 0, 0, 0.55);
-}
-
-#context_selection {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-#context_selection:hover {
     background-color: rgba(0, 0, 0, 0.55);
 }
 

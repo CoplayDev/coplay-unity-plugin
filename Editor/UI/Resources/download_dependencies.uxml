@@ -4,7 +4,7 @@
         <engine:VisualElement name="logo" class="full-logo" />
         <engine:VisualElement name="spacer" class="spacer-flex" />
         <engine:Label text="Coplay needs to download required dependencies before use." class="body-label" />
-        <engine:Label name="status_label" text="Ready to download" class="status-label" />
+        <engine:Label name="status_label" text="Ready to download" class="status-label font-large" />
         <engine:Button text="Download Dependencies" name="download_deps_btn" class="primary-button" />
         <engine:Label name="error_label" class="error-label" />
     </engine:VisualElement>
