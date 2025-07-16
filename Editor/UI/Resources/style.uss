@@ -207,16 +207,6 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     cursor: Link;
 }
 
-#submit.stop-button {
-    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
-    -unity-font-definition: initial;
-    font-size: 24px;
-    color: #D9534F;
-    background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0);
-    border-width: 0px;
-}
-
 #submit {
     -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
     -unity-font-definition: initial;
@@ -847,13 +837,4 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 .pending-approval .code-block {
     opacity: 0.8;
-}
-
-#orchestrator_instructions {
-    display: none;
-    white-space: normal;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 8px;
-    margin-right: 8px;
 }
