@@ -1,3 +1,7 @@
+Label, TextField, Button, Toggle, Slider, IntegerField {
+    font-size: var(--coplay-font);
+}
+
 #chat_message #unity-text-input {
     background-color: rgba(240, 240, 240, 0.65);
 }
