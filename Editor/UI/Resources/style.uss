@@ -207,6 +207,16 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     cursor: Link;
 }
 
+#submit.stop-button {
+    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
+    -unity-font-definition: initial;
+    font-size: 24px;
+    color: #D9534F;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 0px;
+}
+
 #submit {
     -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
     -unity-font-definition: initial;
@@ -837,4 +847,56 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 .pending-approval .code-block {
     opacity: 0.8;
+}
+
+#orchestrator_instructions {
+    display: none;
+    white-space: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Image context item styles */
+.image-context-item-square {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.image-thumbnail-square {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: rgba(100, 100, 100, 0.5);
+    -unity-background-scale-mode: scale-and-crop;
+    border-width: 1px;
+    border-color: rgba(150, 150, 150, 0.3);
+}
+
+.image-thumbnail-square:hover {
+    border-color: rgba(200, 200, 200, 0.6);
+}
+
+.image-remove-button {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-width: 1px;
+    border-color: rgba(100, 100, 100, 0.5);
+    font-size: 8px;
+    color: rgb(100, 100, 100);
+    padding: 0;
+    margin: 0;
+}
+
+.image-remove-button:hover {
+    background-color: rgba(255, 255, 255, 1.0);
+    border-color: rgba(150, 150, 150, 0.8);
+    color: rgb(50, 50, 50);
 }
