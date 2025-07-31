@@ -34,9 +34,10 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 }
 
 #chat_input TextInput {
-    -unity-text-align: middle-left;
+    -unity-text-align: upper-left;
     margin: 0 2px 0 2px;
     padding: 0 2px 0 4px;
+    white-space: normal;
 }
 
 #unity-content-container {
