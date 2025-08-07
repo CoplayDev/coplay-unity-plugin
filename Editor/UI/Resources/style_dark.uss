@@ -350,3 +350,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 .image-item {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+#reasoning_block {
+    color: rgb(103, 103, 103);
+}

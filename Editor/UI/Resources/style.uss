@@ -901,3 +901,11 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     border-color: rgba(150, 150, 150, 0.8);
     color: rgb(50, 50, 50);
 }
+
+#reasoning {
+    white-space: normal;
+}
+
+.unity-foldout__checkmark, .unity-foldout__text {
+    cursor: Link;
+}
