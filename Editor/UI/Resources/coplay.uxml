@@ -85,7 +85,7 @@
                 <ui:Toggle label="Harmful or offensive" name="feedback_option_4" style="margin-bottom: 5px;" />
                 <ui:Toggle label="Answer took too long" name="feedback_option_5" style="margin-bottom: 5px;" />
             </ui:VisualElement>
-            <ui:TextField name="feedback_comment" multiline="true" placeholder-text="What&apos;s wrong? How can the response be improved?" style="height: 80px; margin-bottom: 15px; border-radius: 3px; background-color: rgb(60, 60, 60); color: rgb(220, 220, 220);" />
+            <ui:TextField name="feedback_comment" multiline="true" vertical-scroller-visibility="auto" placeholder-text="What&apos;s wrong? How can the response be improved?" style="max-height: 200px; height: auto; margin-bottom: 15px; border-radius: 3px; background-color: rgb(60, 60, 60); color: rgb(220, 220, 220);" />
             <ui:Button name="submit_feedback_button" text="Submit" style="align-self: flex-end; padding: 5px 15px; border-radius: 3px;" />
         </ui:VisualElement>
     </ui:VisualElement>

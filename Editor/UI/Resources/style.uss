@@ -343,8 +343,18 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     margin: 1px;
 }
 
+#feedback_comment {
+    max-height: 200px;
+    height: auto;
+    vertical-scroller-visibility: auto;
+}
+
 #feedback_comment > TextInput {
     height: 100%;
+    white-space: normal;
+    -unity-text-align: upper-left;
+    margin: 0 2px 0 2px;
+    padding: 0 2px 0 4px;
 }
 
 /* Text Edit Dialog Styles */
@@ -406,6 +416,12 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 }
 
 /* Code Editor Styles */
+.code-editor-super-root {
+    max-height: 400px;
+    height: auto;
+    vertical-scroller-visibility: auto;
+}
+
 .code-editor {
     flex-grow: 1;
     flex-shrink: 0;
@@ -417,14 +433,21 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 .code-editor .code-input {
     flex-grow: 1;
     margin: 0;
-    white-space: pre;
+    white-space: normal;
     flex-shrink: 1;
+    max-height: 400px;
+    height: auto;
+    vertical-scroller-visibility: auto;
 }
 
 .code-editor .code-input TextInput {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     height: 100%;
+    white-space: normal;
+    -unity-text-align: upper-left;
+    margin: 0 2px 0 2px;
+    padding: 0 2px 0 4px;
 }
 
 .code-editor .line-numbers {
