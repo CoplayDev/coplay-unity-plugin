@@ -932,3 +932,109 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 .unity-foldout__checkmark, .unity-foldout__text {
     cursor: Link;
 }
+
+/* Discord icon button styles */
+.discord-icon-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: rgba(149, 149, 149, 0.3);
+    border-width: 0;
+    margin: 2px;
+    background-image: resource('discord-icon');
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: white;
+    cursor: Link;
+}
+
+.discord-icon-button:hover {
+    background-color: rgba(149, 149, 149, 0.5);
+    cursor: Link;
+}
+
+.discord-icon-button:active {
+    background-color: rgba(149, 149, 149, 0.7);
+}
+
+/* Settings panel Discord button positioning */
+.settings-discord-container {
+    position: absolute;
+    bottom: 3px;
+    left: 10px;
+}
+
+/* Settings-specific Discord button styling */
+.settings-discord-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: rgba(149, 149, 149, 0.3);
+    border-width: 0;
+    margin: 0px;
+    background-image: resource('discord-icon');
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: white;
+    cursor: Link;
+}
+
+.settings-discord-button:hover {
+    background-color: rgba(149, 149, 149, 0.5);
+    cursor: Link;
+}
+
+.settings-discord-button:active {
+    background-color: rgba(149, 149, 149, 0.7);
+}
+
+/* Feedback popup Discord button positioning */
+.feedback-discord-container {
+    align-self: flex-start;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Thread ID container styling - no background */
+#thread_id_container {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
+
+/* Copy thread ID button styling */
+#copy_thread_id_button {
+    cursor: Link;
+}
+
+#copy_thread_id_button:hover {
+    background-color: rgba(149, 149, 149, 0.5);
+    cursor: Link;
+}
+
+#copy_thread_id_button:active {
+    background-color: rgba(149, 149, 149, 0.7);
+}
+
+/* Thread ID field styling - smaller font using fixed size */
+#thread_id_field {
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+    white-space: normal;
+    font-size: 8px;
+}
+
+#thread_id_field TextInput {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    padding: 2px 4px;
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+    white-space: normal;
+    font-size: 8px;
+}
+
+/* Feedback popup border */
+#feedback_popup {
+    border-width: 1px;
+    border-color: rgba(150, 150, 150, 0.4);
+}

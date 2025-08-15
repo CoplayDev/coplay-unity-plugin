@@ -86,7 +86,17 @@
                 <ui:Toggle label="Answer took too long" name="feedback_option_5" style="margin-bottom: 5px;" />
             </ui:VisualElement>
             <ui:TextField name="feedback_comment" multiline="true" vertical-scroller-visibility="auto" placeholder-text="What&apos;s wrong? How can the response be improved?" style="max-height: 200px; height: auto; margin-bottom: 15px; border-radius: 3px; background-color: rgb(60, 60, 60); color: rgb(220, 220, 220);" />
-            <ui:Button name="submit_feedback_button" text="Submit" style="align-self: flex-end; padding: 5px 15px; border-radius: 3px;" />
+            <!-- Thread ID section -->
+            <ui:VisualElement name="thread_id_container" style="flex-direction: row; align-items: center; margin-bottom: 10px; padding: 0px 5px;">
+                <ui:Button name="copy_thread_id_button" text="Copy" tooltip="Send us this thread_id on discord to help debug this thread." style="width: 40px; height: 20px; margin-right: 4px; padding: 0; border-radius: 3px; background-color: rgba(149, 149, 149, 0.3); border-width: 0; font-size: 10px;" />
+                <ui:TextField name="thread_id_field" text="thread_id: " readonly="true" style="font-size: 8px; color: rgb(180, 180, 180); flex-grow: 1; background-color: rgba(0, 0, 0, 0); border-width: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-direction: row; justify-content: space-between; align-items: center;">
+                <ui:VisualElement class="feedback-discord-container">
+                    <ui:Button name="feedback_discord_button" text="" tooltip="Go To Discord" class="discord-icon-button" />
+                </ui:VisualElement>
+                <ui:Button name="submit_feedback_button" text="Submit" style="padding: 5px 15px; border-radius: 3px;" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
