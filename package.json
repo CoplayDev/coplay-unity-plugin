@@ -3,7 +3,7 @@
   "displayName": "Coplay",
   "version": "5.2.1",
   "unity": "2021.3",
-  "description": "Copilot for game development",
+  "description": "AI copilot/assistant for game development.\n\nJoin our Discord: https://discord.gg/y4p8KfzrN4 \n\nWebsite: https://www.coplay.dev/ \n\nDocs: https://docs.coplay.dev/getting-started",
   "dependencies": {
     "com.unity.inputsystem": "1.1.1",
     "com.unity.cloud.gltfast": "6.12.1"
