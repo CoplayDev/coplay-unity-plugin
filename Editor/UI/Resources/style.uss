@@ -1038,3 +1038,8 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     border-width: 1px;
     border-color: rgba(150, 150, 150, 0.4);
 }
+
+/* Feedback popup toggle */
+.feedback-toggle > .unity-toggle__input { 
+    margin-right: 8px; 
+}
