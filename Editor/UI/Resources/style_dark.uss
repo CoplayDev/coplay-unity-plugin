@@ -350,3 +350,24 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 .image-item {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+#reasoning_block {
+    color: rgb(103, 103, 103);
+}
+
+/* Restore button dark theme styling */
+.restore-button {
+    background-color: rgba(149, 149, 149, 0.3);
+    color: rgb(180, 180, 180);
+    border-color: rgba(149, 149, 149, 0.5);
+}
+
+.restore-button:hover {
+    background-color: rgba(149, 149, 149, 0.5);
+    border-color: rgba(149, 149, 149, 0.7);
+    color: rgb(220, 220, 220);
+}
+
+.restore-button:active {
+    background-color: rgba(149, 149, 149, 0.7);
+}

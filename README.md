@@ -31,14 +31,14 @@ Find our docs on how to use Coplay here: <https://docs.coplay.dev>
 1. Enter the following URL and click `Add` button
 
 ```
-https://github.com/CoplayDev/unity-plugin.git#beta
+https://github.com/CoplayDev/coplay-unity-plugin.git#beta
 ```
 
 #### Unity 2021
 
 Use this URL for step 3:
 ```
-https://github.com/CoplayDev/unity-plugin.git#beta-unity-2021
+https://github.com/CoplayDev/coplay-unity-plugin.git#beta-unity-2021
 ```
 
 - Once imported to your project, open Coplay from the window menu (Coplay -> Toggle Window) or use the keyboard shortcut `Ctrl+G` on Windows and Linux or `Cmd+G` on macOS.

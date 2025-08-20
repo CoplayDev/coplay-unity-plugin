@@ -34,9 +34,10 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 }
 
 #chat_input TextInput {
-    -unity-text-align: middle-left;
+    -unity-text-align: upper-left;
     margin: 0 2px 0 2px;
     padding: 0 2px 0 4px;
+    white-space: normal;
 }
 
 #unity-content-container {
@@ -342,8 +343,18 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     margin: 1px;
 }
 
+#feedback_comment {
+    max-height: 200px;
+    height: auto;
+    vertical-scroller-visibility: auto;
+}
+
 #feedback_comment > TextInput {
     height: 100%;
+    white-space: normal;
+    -unity-text-align: upper-left;
+    margin: 0 2px 0 2px;
+    padding: 0 2px 0 4px;
 }
 
 /* Text Edit Dialog Styles */
@@ -405,6 +416,12 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 }
 
 /* Code Editor Styles */
+.code-editor-super-root {
+    max-height: 400px;
+    height: auto;
+    vertical-scroller-visibility: auto;
+}
+
 .code-editor {
     flex-grow: 1;
     flex-shrink: 0;
@@ -416,14 +433,21 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 .code-editor .code-input {
     flex-grow: 1;
     margin: 0;
-    white-space: pre;
+    white-space: normal;
     flex-shrink: 1;
+    max-height: 400px;
+    height: auto;
+    vertical-scroller-visibility: auto;
 }
 
 .code-editor .code-input TextInput {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     height: 100%;
+    white-space: normal;
+    -unity-text-align: upper-left;
+    margin: 0 2px 0 2px;
+    padding: 0 2px 0 4px;
 }
 
 .code-editor .line-numbers {
@@ -815,6 +839,29 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     cursor: Link;
 }
 
+/* Restore button styling */
+.restore-button {
+    background-color: rgba(149, 149, 149, 0.3);
+    color: rgb(180, 180, 180);
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(149, 149, 149, 0.5);
+    padding: 2px 8px;
+    margin-left: 4px;
+    font-size: var(--coplay-font);
+    cursor: Link;
+}
+
+.restore-button:hover {
+    background-color: rgba(149, 149, 149, 0.5);
+    border-color: rgba(149, 149, 149, 0.7);
+    cursor: Link;
+}
+
+.restore-button:active {
+    background-color: rgba(149, 149, 149, 0.7);
+}
+
 .image-preview-container {
     display: none;
     margin-top: 5px;
@@ -899,4 +946,118 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     background-color: rgba(255, 255, 255, 1.0);
     border-color: rgba(150, 150, 150, 0.8);
     color: rgb(50, 50, 50);
+}
+
+#reasoning {
+    white-space: normal;
+}
+
+.unity-foldout__checkmark, .unity-foldout__text {
+    cursor: Link;
+}
+
+/* Discord icon button styles */
+.discord-icon-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: rgba(149, 149, 149, 0.3);
+    border-width: 0;
+    margin: 2px;
+    background-image: resource('discord-icon');
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: white;
+    cursor: Link;
+}
+
+.discord-icon-button:hover {
+    background-color: rgba(149, 149, 149, 0.5);
+    cursor: Link;
+}
+
+.discord-icon-button:active {
+    background-color: rgba(149, 149, 149, 0.7);
+}
+
+/* Settings panel Discord button positioning */
+.settings-discord-container {
+    position: absolute;
+    bottom: 3px;
+    left: 10px;
+}
+
+/* Settings-specific Discord button styling */
+.settings-discord-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: rgba(149, 149, 149, 0.3);
+    border-width: 0;
+    margin: 0px;
+    background-image: resource('discord-icon');
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: white;
+    cursor: Link;
+}
+
+.settings-discord-button:hover {
+    background-color: rgba(149, 149, 149, 0.5);
+    cursor: Link;
+}
+
+.settings-discord-button:active {
+    background-color: rgba(149, 149, 149, 0.7);
+}
+
+/* Feedback popup Discord button positioning */
+.feedback-discord-container {
+    align-self: flex-start;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Thread ID container styling - no background */
+#thread_id_container {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
+
+/* Copy thread ID button styling */
+#copy_thread_id_button {
+    cursor: Link;
+}
+
+#copy_thread_id_button:hover {
+    background-color: rgba(149, 149, 149, 0.5);
+    cursor: Link;
+}
+
+#copy_thread_id_button:active {
+    background-color: rgba(149, 149, 149, 0.7);
+}
+
+/* Thread ID field styling - smaller font using fixed size */
+#thread_id_field {
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+    white-space: normal;
+    font-size: 8px;
+}
+
+#thread_id_field TextInput {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    padding: 2px 4px;
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+    white-space: normal;
+    font-size: 8px;
+}
+
+/* Feedback popup border */
+#feedback_popup {
+    border-width: 1px;
+    border-color: rgba(150, 150, 150, 0.4);
 }
