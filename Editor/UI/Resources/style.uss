@@ -925,6 +925,166 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     color: rgb(50, 50, 50);
 }
 
+/* Thread Review Panel Styles */
+.thread-review-panel {
+    display: none;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: column;
+    border-top-width: 1px;
+    border-top-color: rgba(102, 102, 102, 0.8);
+    background-color: rgba(51, 51, 51, 0.95);
+    padding: 10px 15px;
+}
+
+.thread-review-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.thread-review-icon {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.thread-review-title {
+    font-size: var(--coplay-medium-font);
+    -unity-font-style: bold;
+    color: rgba(230, 230, 230, 1);
+    flex-grow: 1;
+}
+
+.thread-review-close-button {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    width: 20px;
+    height: 20px;
+    color: rgba(179, 179, 179, 1);
+    padding: 0;
+    margin: 0;
+    cursor: Link;
+}
+
+.thread-review-close-button:hover {
+    color: rgba(230, 230, 230, 1);
+}
+
+.thread-review-message {
+    white-space: normal;
+    margin-bottom: 12px;
+    color: rgba(217, 217, 217, 1);
+    font-size: var(--coplay-font);
+}
+
+.thread-review-button-container {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.thread-review-button {
+    width: 80px;
+    height: 28px;
+    border-radius: 3px;
+    border-width: 0;
+    cursor: Link;
+}
+
+.thread-review-reject-button {
+    margin-right: 8px;
+    background-color: rgba(102, 102, 102, 1);
+    color: white;
+}
+
+.thread-review-reject-button:hover {
+    background-color: rgba(128, 128, 128, 1);
+}
+
+.thread-review-accept-button {
+    background-color: rgba(51, 153, 230, 1);
+    color: white;
+}
+
+.thread-review-accept-button:hover {
+    background-color: rgba(71, 173, 250, 1);
+}
+
+/* Thread Review Diff Content Styles */
+.thread-review-diff-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(102, 102, 102, 0.5);
+    background-color: rgba(40, 40, 40, 0.8);
+}
+
+.thread-review-diff-scroll {
+    max-height: 200px;
+    padding: 8px;
+}
+
+.thread-review-diff-content {
+    flex-direction: column;
+}
+
+.diff-block {
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(102, 102, 102, 0.3);
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 8px;
+}
+
+.diff-section-label {
+    font-size: var(--coplay-small-font);
+    -unity-font-style: bold;
+    margin-bottom: 4px;
+    color: rgba(200, 200, 200, 1);
+}
+
+.diff-search-field {
+    margin-bottom: 8px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(102, 102, 102, 0.4);
+    background-color: rgba(60, 60, 60, 0.8);
+    color: rgba(180, 180, 180, 1);
+    font-size: var(--coplay-small-font);
+    -unity-font: resource("Fonts/RobotoMono-Regular");
+    -unity-font-definition: resource("Fonts/RobotoMono-Regular");
+}
+
+.diff-search-field TextInput {
+    background-color: rgba(60, 60, 60, 0.8);
+    color: rgba(180, 180, 180, 1);
+    border-width: 0;
+    padding: 4px;
+}
+
+.diff-replace-field {
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(51, 153, 230, 0.6);
+    background-color: rgba(40, 40, 40, 1);
+    color: rgba(230, 230, 230, 1);
+    font-size: var(--coplay-small-font);
+    -unity-font: resource("Fonts/RobotoMono-Regular");
+    -unity-font-definition: resource("Fonts/RobotoMono-Regular");
+}
+
+.diff-replace-field TextInput {
+    background-color: rgba(40, 40, 40, 1);
+    color: rgba(230, 230, 230, 1);
+    border-width: 0;
+    padding: 4px;
+}
+
+.diff-replace-field:focus TextInput {
+    border-color: rgba(51, 153, 230, 1);
+}
 #reasoning {
     white-space: normal;
 }

@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="thread_review_panel" class="thread-review-panel">
+        <ui:VisualElement name="thread_review_header" class="thread-review-header">
+            <ui:Label name="thread_review_icon" text="💡" class="thread-review-icon" />
+            <ui:Label name="thread_review_title" text="Continual Learning" class="thread-review-title" />
+            <ui:Button name="thread_review_close" text="✕" class="thread-review-close-button" />
+        </ui:VisualElement>
+        <ui:Label name="thread_review_message" class="thread-review-message" />
+        <ui:VisualElement name="thread_review_diff_container" class="thread-review-diff-container" style="display: none;">
+            <ui:ScrollView name="thread_review_diff_scroll" class="thread-review-diff-scroll">
+                <ui:VisualElement name="thread_review_diff_content" class="thread-review-diff-content" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="thread_review_buttons" class="thread-review-button-container">
+            <ui:Button name="thread_review_reject" text="Reject" class="thread-review-button thread-review-reject-button" />
+            <ui:Button name="thread_review_accept" text="Accept" class="thread-review-button thread-review-accept-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

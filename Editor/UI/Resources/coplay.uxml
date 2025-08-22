@@ -69,6 +69,9 @@
             <ui:ProgressBar name="progress_bar" style="flex-grow: 1;" />
             <ui:Button text="✕ Cancel" parse-escape-sequences="true" name="cancel_tasks" />
         </ui:VisualElement>
+        <!-- Thread Review Panel -->
+        <ui:VisualElement name="thread_review_container" />
+        
         <!-- Status Bar -->
         <ui:Label tabindex="-1" text="Status..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="status" style="-unity-text-align: middle-center; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; color: rgb(101, 100, 100);" />
         <!-- Feedback Popup -->
