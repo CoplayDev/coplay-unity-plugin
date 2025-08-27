@@ -153,6 +153,14 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     -unity-font-style: bold;
 }
 
+.thread-cost {
+    margin-left: 8px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    -unity-text-align: middle-center;
+    color: rgb(128, 128, 128);
+}
+
 .settings-buttons {
     flex-direction: row;
     align-items: center;
@@ -1200,6 +1208,12 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 }
 
 /* Feedback popup toggle */
-.feedback-toggle > .unity-toggle__input { 
-    margin-right: 8px; 
+.feedback-toggle > .unity-toggle__input {
+    margin-right: 8px;
+}
+
+.message-cost {
+    font-size: 10px;
+    color: rgb(128, 128, 128);
+    margin-top: 4px;
 }

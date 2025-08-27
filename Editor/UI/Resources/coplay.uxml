@@ -9,7 +9,8 @@
                 
                 <!-- Center section - Thread name -->
                 <ui:Label name="thread_name" display-tooltip-when-elided="true" class="thread-name" />
-                
+                <ui:Label name="thread_cost" class="thread-cost" text="$0.0000" />
+
                 <!-- Right section - Settings buttons -->
                 <ui:VisualElement name="settings_bar_buttons" class="settings-buttons">
                     <ui:Button name="new_thread" text="\u002B" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="New Chat" class="toolbar font-large" />
