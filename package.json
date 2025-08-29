@@ -1,8 +1,8 @@
 {
   "name": "com.coplaydev.coplay",
   "displayName": "Coplay",
-  "version": "5.4.1",
-  "unity": "2021.3",
+  "version": "6.0.0",
+  "unity": "2022.3",
   "description": "AI copilot/assistant for game development.\n\nJoin our Discord: https://discord.gg/y4p8KfzrN4 \n\nWebsite: https://www.coplay.dev/ \n\nDocs: https://docs.coplay.dev/getting-started",
   "documentationUrl": "https://docs.coplay.dev/getting-started",
   "dependencies": {
