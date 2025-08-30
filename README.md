@@ -24,7 +24,7 @@ Find our docs on how to use Coplay here: <https://docs.coplay.dev>
 
 ## Installation
 
-#### Unity 2022 or newer
+#### Unity 2022.3 or newer
 
 1. Open Package Manager window (Window | Package Manager)
 1. Click `+` button on the upper-left of a window, and select "Add package from git URL..."
@@ -32,13 +32,6 @@ Find our docs on how to use Coplay here: <https://docs.coplay.dev>
 
 ```
 https://github.com/CoplayDev/coplay-unity-plugin.git#beta
-```
-
-#### Unity 2021
-
-Use this URL for step 3:
-```
-https://github.com/CoplayDev/coplay-unity-plugin.git#beta-unity-2021
 ```
 
 - Once imported to your project, open Coplay from the window menu (Coplay -> Toggle Window) or use the keyboard shortcut `Ctrl+G` on Windows and Linux or `Cmd+G` on macOS.
