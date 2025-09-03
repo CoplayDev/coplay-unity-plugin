@@ -194,7 +194,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     padding: 5px;
 }
 
-#metrics_panel {
+#account_panel {
     flex-grow: 0;
     display: none;
     flex-shrink: 0;

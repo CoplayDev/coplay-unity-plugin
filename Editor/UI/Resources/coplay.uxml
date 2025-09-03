@@ -16,7 +16,7 @@
                     <ui:Button name="new_thread" text="\u002B" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="New Chat" class="toolbar font-large" />
                     <ui:Button name="history" text="\uf1da" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="History" class="toolbar font-large" />
                     <ui:Button name="settings" text="\uf7d9" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Settings" class="toolbar font-large" />
-                    <ui:Button name="metrics" text="\uf1fe" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Usage Metrics" class="toolbar font-large" />
+                    <ui:Button name="account" text="\uf007" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Account" class="toolbar font-large" />
                 </ui:VisualElement>
             </ui:VisualElement>
             
@@ -27,7 +27,7 @@
         </ui:VisualElement>
         <ui:ScrollView name="history" style="display: none;" />
         <ui:VisualElement name="settings_panel" />
-        <ui:VisualElement name="metrics_panel" />
+        <ui:VisualElement name="account_panel" />
         <ui:VisualElement name="pipeline_recording_panel" />
         <ui:ScrollView name="messages" view-data-key="l">
             <ui:VisualElement name="chat" style="flex-grow: 0; flex-shrink: 0;" />
