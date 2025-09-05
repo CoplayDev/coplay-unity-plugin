@@ -10,7 +10,10 @@
             <ui:VisualElement name="auto_approve_limit_container" class="auto_approve_limit_container" style="display: none; padding: 10px; margin-bottom: 10px; border-radius: 5px;">
                 <ui:Label text="Maximum Requests Reached" style="font-size: 14px; -unity-font-style: bold; margin-bottom: 5px;" />
                 <ui:Label name="auto_approve_count_label" text="Coplay has auto-approved N API requests. Would you like to reset the count and proceed with the task?" style="white-space: normal; margin-bottom: 10px;" />
-                <ui:Button text="Proceed" name="proceed_button" style="align-self: flex-start; padding: 5px 15px;" />
+                <ui:VisualElement style="flex-direction: row; gap: 10px;">
+                    <ui:Button text="Proceed" name="proceed_button" style="padding: 5px 15px;" />
+                    <ui:Button text="Adjust Limit" name="adjust_limit_button" style="padding: 5px 15px;" />
+                </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="image_preview" class="image-preview-container" />
             <ui:VisualElement name="cost_and_feedback" style="flex-direction: row; margin-top: 5px;">
