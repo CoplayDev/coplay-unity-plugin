@@ -844,6 +844,29 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     cursor: Link;
 }
 
+/* Restore button styling */
+.restore-button {
+    background-color: rgba(149, 149, 149, 0.2);
+    color: rgb(160, 160, 160);
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgba(149, 149, 149, 0.3);
+    padding: 1px 6px;
+    margin-left: 4px;
+    font-size: var(--coplay-small-font);
+    cursor: Link;
+}
+
+.restore-button:hover {
+    background-color: rgba(149, 149, 149, 0.5);
+    border-color: rgba(149, 149, 149, 0.7);
+    cursor: Link;
+}
+
+.restore-button:active {
+    background-color: rgba(149, 149, 149, 0.7);
+}
+
 .image-preview-container {
     display: none;
     margin-top: 5px;
@@ -1207,6 +1230,75 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 .message-cost {
     font-size: 10px;
-    color: rgb(128, 128, 128);
     margin-top: 4px;
+}
+
+#context_usage_bar VisualElement.unity-progress-bar__background {
+    border-radius: 5px;
+}
+
+#context_usage_bar VisualElement.unity-progress-bar__progress {
+    border-radius: 5px;
+    background-color: rgb(119, 119, 119);
+}
+
+#context_usage_bar Label.unity-progress-bar__title {
+    color: rgb(230, 230, 230);
+}
+
+/* Checkpoint line styles */
+.checkpoint-line-container {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 20px;
+}
+
+.checkpoint-dotted-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-top-width: 1px;
+    border-top-color: rgba(128, 128, 128, 0.2);
+    border-top-style: dotted;
+}
+
+.checkpoint-restore-button {
+    font-size: 10px;
+    height: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 10px;
+    background-color: rgba(80, 80, 80, 0.1);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: rgba(128, 128, 128, 0.2);
+    border-bottom-color: rgba(128, 128, 128, 0.2);
+    border-left-color: rgba(128, 128, 128, 0.2);
+    border-right-color: rgba(128, 128, 128, 0.2);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: rgba(180, 180, 180, 0.8);
+    cursor: Link;
+}
+
+.checkpoint-restore-button:hover {
+    background-color: rgba(80, 80, 80, 0.3);
+    border-top-color: rgba(128, 128, 128, 0.4);
+    border-bottom-color: rgba(128, 128, 128, 0.4);
+    border-left-color: rgba(128, 128, 128, 0.4);
+    border-right-color: rgba(128, 128, 128, 0.4);
+    color: rgba(200, 200, 200, 1.0);
+    cursor: Link;
+}
+
+.checkpoint-restore-button:active {
+    background-color: rgba(80, 80, 80, 0.5);
 }

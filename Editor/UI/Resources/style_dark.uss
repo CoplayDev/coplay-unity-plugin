@@ -354,3 +354,23 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 #reasoning_block {
     color: rgb(103, 103, 103);
 }
+
+.message-cost {
+    color: rgb(79, 79, 79);
+}
+
+.restore-button {
+    background-color: rgba(149, 149, 149, 0.3);
+    color: rgb(180, 180, 180);
+    border-color: rgba(149, 149, 149, 0.5);
+}
+
+.restore-button:hover {
+    background-color: rgba(149, 149, 149, 0.5);
+    border-color: rgba(149, 149, 149, 0.7);
+    color: rgb(220, 220, 220);
+}
+
+.restore-button:active {
+    background-color: rgba(149, 149, 149, 0.7);
+}
