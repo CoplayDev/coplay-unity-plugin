@@ -355,7 +355,10 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     color: rgb(103, 103, 103);
 }
 
-/* Restore button dark theme styling */
+.message-cost {
+    color: rgb(79, 79, 79);
+}
+
 .restore-button {
     background-color: rgba(149, 149, 149, 0.3);
     color: rgb(180, 180, 180);

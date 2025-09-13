@@ -10,15 +10,23 @@
             <ui:VisualElement name="auto_approve_limit_container" class="auto_approve_limit_container" style="display: none; padding: 10px; margin-bottom: 10px; border-radius: 5px;">
                 <ui:Label text="Maximum Requests Reached" style="font-size: 14px; -unity-font-style: bold; margin-bottom: 5px;" />
                 <ui:Label name="auto_approve_count_label" text="Coplay has auto-approved N API requests. Would you like to reset the count and proceed with the task?" style="white-space: normal; margin-bottom: 10px;" />
-                <ui:Button text="Proceed" name="proceed_button" style="align-self: flex-start; padding: 5px 15px;" />
+                <ui:VisualElement style="flex-direction: row; gap: 10px;">
+                    <ui:Button text="Proceed" name="proceed_button" style="padding: 5px 15px;" />
+                    <ui:Button text="Adjust Limit" name="adjust_limit_button" style="padding: 5px 15px;" />
+                </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="image_preview" class="image-preview-container" />
             <ui:VisualElement name="cost_and_feedback" style="flex-direction: row; margin-top: 5px;">
                 <ui:Label name="cost_label" class="message-cost" style="flex-grow: 1;" />
+                <ui:Button name="restore_button" text="Restore checkpoint" tooltip="Restore to After" class="font-medium restore-button" style="display: none;" />
                 <ui:VisualElement name="feedback_buttons" style="flex-direction: row; justify-content: flex-end; margin-left: auto; display: none;">
                     <ui:Button name="like_button" text="\uf164;" parse-escape-sequences="true" tooltip="This was helpful" class="font-medium" />
                     <ui:Button name="dislike_button" text="\uf165;" parse-escape-sequences="true" tooltip="This was not helpful" class="font-medium" />
                 </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="checkpoint_line_container" class="checkpoint-line-container" style="display: none;">
+                <ui:VisualElement name="checkpoint_dotted_line" class="checkpoint-dotted-line" />
+                <ui:Button name="checkpoint_restore_button" text="Restore Checkpoint" class="checkpoint-restore-button" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

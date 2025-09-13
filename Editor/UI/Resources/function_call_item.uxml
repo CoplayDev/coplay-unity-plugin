@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="function_call_container" style="flex-direction: column; margin-bottom: 5px;">
+        <ui:VisualElement name="header_row" style="flex-direction: row;">
+            <ui:Label name="function_call_label" class="function-call-label" enable-rich-text="true" style="white-space: normal;" />
+        </ui:VisualElement>
+        
+        <!-- Code block container -->
+        <ui:VisualElement name="code_block_container" style="flex-direction: column; display: none;">
+            <ui:Label name="file_path_label" class="file-path-label" style="font-size: 12px; color: rgb(128, 128, 128); margin-bottom: 2px;" />
+            <ui:TextField name="code_block" class="code-block" multiline="true" readonly="true" style="max-height: 300px;" />
+        </ui:VisualElement>
+        
+        <!-- Status container -->
+        <ui:VisualElement name="status_container" style="display: none;">
+            <ui:Label name="status_label" text="Executing..." />
+        </ui:VisualElement>
+        
+        <!-- Interactive elements container -->
+        <ui:VisualElement name="interactive_container" style="display: none;">
+            <!-- Extra options container (dropdowns, etc.) -->
+            <ui:VisualElement name="extra_options_container" class="function_execution_extra_button_container" style="display: none;" />
+            
+            <!-- Button container -->
+            <ui:VisualElement name="button_container" class="function_execution_button_container" style="flex-direction: row; align-items: center;">
+                <ui:Button name="execute_button" text="Execute" />
+                <ui:Button name="cancel_button" text="✕" tooltip="Cancel" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

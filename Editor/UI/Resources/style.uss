@@ -354,7 +354,6 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 #feedback_comment {
     max-height: 200px;
     height: auto;
-    vertical-scroller-visibility: auto;
 }
 
 #feedback_comment > TextInput {
@@ -427,7 +426,6 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 .code-editor-super-root {
     max-height: 400px;
     height: auto;
-    vertical-scroller-visibility: auto;
 }
 
 .code-editor {
@@ -445,7 +443,6 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     flex-shrink: 1;
     max-height: 400px;
     height: auto;
-    vertical-scroller-visibility: auto;
 }
 
 .code-editor .code-input TextInput {
@@ -559,6 +556,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 #history {
     max-height: 200px;
+    flex-shrink: 0;
 }
 
 .history_item {
@@ -597,7 +595,6 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     margin-right: 10px;
     margin-bottom: 10px;
     -unity-font-definition: resource("Fonts/RobotoMono-Regular");
-    -unity-font-initial: resource("Fonts/RobotoMono-Regular");
 }
 
 .function-call-label {
@@ -759,7 +756,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     padding: 5px;
 }
 
-#metrics_panel {
+#account_panel {
     flex-grow: 0;
     display: none;
     flex-shrink: 0;
@@ -804,7 +801,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 }
 
 #save_recording_dialog .dialog-title {
-    -unity-font-style-and-weight: bold;
+    -unity-font-style: bold;
     margin-bottom: 10px;
 }
 
@@ -849,14 +846,14 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 /* Restore button styling */
 .restore-button {
-    background-color: rgba(149, 149, 149, 0.3);
-    color: rgb(180, 180, 180);
-    border-radius: 3px;
+    background-color: rgba(149, 149, 149, 0.2);
+    color: rgb(160, 160, 160);
+    border-radius: 2px;
     border-width: 1px;
-    border-color: rgba(149, 149, 149, 0.5);
-    padding: 2px 8px;
+    border-color: rgba(149, 149, 149, 0.3);
+    padding: 1px 6px;
     margin-left: 4px;
-    font-size: var(--coplay-font);
+    font-size: var(--coplay-small-font);
     cursor: Link;
 }
 
@@ -1208,8 +1205,6 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 /* Thread ID field styling - smaller font using fixed size */
 #thread_id_field {
-    font-family: 'Courier New', monospace;
-    word-break: break-all;
     white-space: normal;
     font-size: 8px;
 }
@@ -1218,8 +1213,6 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     background-color: rgba(0, 0, 0, 0);
     border-width: 0;
     padding: 2px 4px;
-    font-family: 'Courier New', monospace;
-    word-break: break-all;
     white-space: normal;
     font-size: 8px;
 }
@@ -1237,6 +1230,75 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 .message-cost {
     font-size: 10px;
-    color: rgb(128, 128, 128);
     margin-top: 4px;
+}
+
+#context_usage_bar VisualElement.unity-progress-bar__background {
+    border-radius: 5px;
+}
+
+#context_usage_bar VisualElement.unity-progress-bar__progress {
+    border-radius: 5px;
+    background-color: rgb(119, 119, 119);
+}
+
+#context_usage_bar Label.unity-progress-bar__title {
+    color: rgb(230, 230, 230);
+}
+
+/* Checkpoint line styles */
+.checkpoint-line-container {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 20px;
+}
+
+.checkpoint-dotted-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-top-width: 1px;
+    border-top-color: rgba(128, 128, 128, 0.2);
+    border-top-style: dotted;
+}
+
+.checkpoint-restore-button {
+    font-size: 10px;
+    height: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 10px;
+    background-color: rgba(80, 80, 80, 0.1);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: rgba(128, 128, 128, 0.2);
+    border-bottom-color: rgba(128, 128, 128, 0.2);
+    border-left-color: rgba(128, 128, 128, 0.2);
+    border-right-color: rgba(128, 128, 128, 0.2);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: rgba(180, 180, 180, 0.8);
+    cursor: Link;
+}
+
+.checkpoint-restore-button:hover {
+    background-color: rgba(80, 80, 80, 0.3);
+    border-top-color: rgba(128, 128, 128, 0.4);
+    border-bottom-color: rgba(128, 128, 128, 0.4);
+    border-left-color: rgba(128, 128, 128, 0.4);
+    border-right-color: rgba(128, 128, 128, 0.4);
+    color: rgba(200, 200, 200, 1.0);
+    cursor: Link;
+}
+
+.checkpoint-restore-button:active {
+    background-color: rgba(80, 80, 80, 0.5);
 }
