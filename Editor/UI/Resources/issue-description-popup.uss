@@ -1,0 +1,52 @@
+/* Issue Description Popup Window Styles */
+
+/* Root container */
+.issue-description-popup-root {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* Dialog title */
+.issue-description-popup-title {
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+}
+
+/* Dialog message */
+.issue-description-popup-message {
+    margin-bottom: 15px;
+    white-space: normal;
+}
+
+/* Issue description input field */
+.issue-description-popup-field {
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+/* Button container */
+.issue-description-popup-button-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Cancel button */
+.issue-description-popup-cancel-button {
+    width: 120px;
+    height: 30px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+/* Send button */
+.issue-description-popup-send-button {
+    width: 120px;
+    height: 30px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
