@@ -6,6 +6,7 @@
                 <ui:Label name="reasoning" />
             </ui:Foldout>
             <ui:TextField name="content" select-all-on-focus="false" vertical-scroller-visibility="Auto" multiline="true" select-all-on-mouse-up="false" readonly="true" style="-unity-background-image-tint-color: rgba(248, 0, 0, 0); color: rgb(171, 93, 93); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: auto; width: 100%; align-items: flex-start; max-width: 100%; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; white-space: normal; max-height: 500px; margin-left: 0; margin-top: 0; margin-right: 0;" />
+            <ui:VisualElement name="message_context" style="display: none; flex-direction: row; flex-wrap: wrap; margin-top: 5px; margin-bottom: 5px; padding: 5px; border-radius: 3px; background-color: rgba(48, 47, 47, 0.3);" />
             <ui:VisualElement name="function_calls" style="display: none;" />
             <ui:VisualElement name="auto_approve_limit_container" class="auto_approve_limit_container" style="display: none; padding: 10px; margin-bottom: 10px; border-radius: 5px;">
                 <ui:Label text="Maximum Requests Reached" style="font-size: 14px; -unity-font-style: bold; margin-bottom: 5px;" />
