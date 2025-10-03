@@ -327,7 +327,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 #feedback_buttons Button {
     border-width: 0;
     margin: 0;
-    padding: 2px 8px;
+    padding: 2px 5px;
     -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
     -unity-font-definition: initial;
     background-color: rgba(0,0,0,0);
@@ -1204,6 +1204,20 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     background-color: rgba(149, 149, 149, 0.7);
 }
 
+#copy_message_button {
+    border-width: 0;
+    margin: 5px 0 0 0;
+    padding: 2px 5px;
+    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
+    -unity-font-definition: initial;
+    background-color: rgba(0,0,0,0);
+    cursor: Link;
+}
+
+#copy_all_messages {
+    margin-left: 4px;
+}
+
 /* Thread ID field styling - smaller font using fixed size */
 #thread_id_field {
     white-space: normal;
@@ -1231,7 +1245,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 .message-cost {
     font-size: 10px;
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
 #context_usage_bar VisualElement.unity-progress-bar__background {

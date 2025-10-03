@@ -12,6 +12,7 @@
                 <!-- Right section - Settings buttons -->
                 <ui:VisualElement name="settings_bar_buttons" class="settings-buttons">
                     <ui:Button name="new_thread" text="\u002B" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="New Chat" class="toolbar font-large" />
+                    <ui:Button name="copy_all_messages" text="\uf0c5" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Copy all messages" class="toolbar font-large" />
                     <ui:Button name="history" text="\uf1da" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="History" class="toolbar font-large" />
                     <ui:Button name="settings" text="\uf7d9" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Settings" class="toolbar font-large" />
                     <ui:Button name="account" text="\uf007" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Account" class="toolbar font-large" />

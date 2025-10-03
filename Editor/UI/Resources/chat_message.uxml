@@ -19,6 +19,7 @@
             <ui:VisualElement name="image_preview" class="image-preview-container" />
             <ui:VisualElement name="cost_and_feedback" style="flex-direction: row; margin-top: 5px;">
                 <ui:Label name="cost_label" class="message-cost" style="flex-grow: 1;" />
+                <ui:Button name="copy_message_button" text="\uf0c5" parse-escape-sequences="true" tooltip="Copy message" class="font-medium" />
                 <ui:Button name="restore_button" text="Restore checkpoint" tooltip="Restore to After" class="font-medium restore-button" style="display: none;" />
                 <ui:VisualElement name="feedback_buttons" style="flex-direction: row; justify-content: flex-end; margin-left: auto; display: none;">
                     <ui:Button name="like_button" text="\uf164;" parse-escape-sequences="true" tooltip="This was helpful" class="font-medium" />
