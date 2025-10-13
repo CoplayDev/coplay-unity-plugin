@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="todo_list_container" class="todo-list-container">
+        <!-- Collapsed view - shows progress bar and completion ratio -->
+        <ui:VisualElement name="todo_list_collapsed" class="todo-collapsed">
+            <ui:VisualElement class="todo-progress-section">
+                <ui:ProgressBar name="todo_progress_bar" class="todo-progress-bar" />
+                <ui:Label name="todo_completion_text" text="0/0" class="todo-completion-text" />
+                <ui:Label name="todo_all_completed_label" text="All tasks have been completed!" class="todo-all-completed-label" style="display: none;" />
+            </ui:VisualElement>
+            <ui:Button name="todo_expand_button" text="▼" class="todo-expand-button" />
+        </ui:VisualElement>
+        
+        <!-- Expanded view - shows full todo list -->
+        <ui:ScrollView name="todo_list_expanded" class="todo-expanded" style="display: none;">
+            <ui:VisualElement name="todo_items_container" class="todo-items-container" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

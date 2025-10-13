@@ -773,6 +773,12 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     border-bottom-width: 1px;
 }
 
+/* Todo List Container Styles */
+#todo_list_container {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
 /* Messages and Thinking Styles */
 #messages {
     height: auto;

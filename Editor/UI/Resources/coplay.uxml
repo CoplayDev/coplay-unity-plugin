@@ -24,6 +24,8 @@
                 <ui:Button name="update_button" text="Update available" display-tooltip-when-elided="true" class="update-button" />
             </ui:VisualElement>
         </ui:VisualElement>
+        <!-- Todo List Container -->
+        <ui:VisualElement name="todo_list_container" />
         <ui:ScrollView name="history" style="display: none;" />
         <ui:VisualElement name="settings_panel" />
         <ui:VisualElement name="account_panel" />
