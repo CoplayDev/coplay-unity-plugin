@@ -1380,3 +1380,65 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     border-width: 1px;
     border-color: rgba(150, 150, 150, 0.3);
 }
+
+/* Console Debug Button Styles */
+.console-debug-button {
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: rgba(77, 128, 204, 1);
+    color: white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-width: 0;
+    cursor: Link;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+}
+
+.console-debug-button:hover {
+    background-color: rgba(97, 148, 224, 1);
+    cursor: Link;
+}
+
+.console-debug-button:active {
+    background-color: rgba(57, 108, 184, 1);
+}
+
+/* Console Copy Button Styles */
+.console-copy-button {
+    height: 24px;
+    width: 32px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: rgba(77, 128, 204, 1);
+    color: white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    cursor: Link;
+    -unity-text-align: middle-center;
+    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
+    -unity-font-definition: initial;
+    font-size: 16px;
+}
+
+.console-copy-button:hover {
+    background-color: rgba(97, 148, 224, 1);
+    cursor: Link;
+}
+
+.console-copy-button:active {
+    background-color: rgba(57, 108, 184, 1);
+}
