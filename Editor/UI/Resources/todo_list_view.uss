@@ -96,7 +96,6 @@
     color: rgba(255, 255, 255, 0.9);
     flex-grow: 1;
     white-space: normal;
-    line-height: 1.4;
 }
 
 /* Completed item styling */
@@ -152,7 +151,7 @@
 .todo-all-completed-label {
     color: #4caf50;
     font-size: 15px;
-    font-weight: bold;
+    -unity-font-style: bold;
     margin-left: 8px;
     margin-right: 8px;
     -unity-text-align: middle-center;

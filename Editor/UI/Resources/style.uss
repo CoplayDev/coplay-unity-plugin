@@ -755,7 +755,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     display: none;
     flex-shrink: 0;
     padding: 5px;
-    border-bottom-width: 5;
+    border-bottom-width: 5px;
 }
 
 #account_panel {
@@ -1283,7 +1283,6 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     background-color: rgba(128, 128, 128, 0.3);
     border-top-width: 1px;
     border-top-color: rgba(128, 128, 128, 0.2);
-    border-top-style: dotted;
 }
 
 .checkpoint-restore-button {
@@ -1390,7 +1389,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 }
 
 .coplay-tabbed-view__header Button:focus {
-    border-width-top: 2px;
+    border-top-width: 2px;
 }
 
 .coplay-tabbed-view__header Button {
