@@ -755,6 +755,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     display: none;
     flex-shrink: 0;
     padding: 5px;
+    border-bottom-width: 5;
 }
 
 #account_panel {
@@ -1379,6 +1380,41 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     -unity-background-scale-mode: scale-and-crop;
     border-width: 1px;
     border-color: rgba(150, 150, 150, 0.3);
+}
+
+.coplay-tabbed-view__header Button.coplay-tabbed-view__header__button--active {
+    -unity-font-style: bold;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+}
+
+.coplay-tabbed-view__header Button:focus {
+    border-width-top: 2px;
+}
+
+.coplay-tabbed-view__header Button {
+    border-width: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.coplay-tabbed-view {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.coplay-tabbed-view__header {
+    flex-direction: row;
+}
+
+.coplay-tabbed-view__content {
+    padding-top: 5px;
+    flex-grow: 1;
 }
 
 /* Console Debug Button Styles */

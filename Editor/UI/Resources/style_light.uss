@@ -292,3 +292,12 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 #copy_message_button:hover {
     color: rgb(240, 240, 240);
 }
+
+.coplay-tabbed-view__header Button.coplay-tabbed-view__header__button--active {
+    border-color: rgb(160, 160, 160);
+    background-color: rgb(200, 200, 200);
+}
+
+.coplay-tabbed-view__header Button {
+    background-color: rgb(165, 165, 165);
+}
