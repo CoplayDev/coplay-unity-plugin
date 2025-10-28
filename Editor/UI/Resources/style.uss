@@ -1418,20 +1418,13 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 /* Console Debug Button Styles */
 .console-debug-button {
-    margin-left: 5px;
-    margin-right: 5px;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: rgba(77, 128, 204, 1);
     color: white;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
     border-width: 0;
     cursor: Link;
     -unity-text-align: middle-center;
@@ -1449,16 +1442,11 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 /* Console Copy Button Styles */
 .console-copy-button {
-    height: 24px;
-    width: 32px;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: rgba(77, 128, 204, 1);
     color: white;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-radius: 3px;
     padding: 0;
     margin: 0;
     border-width: 0;
