@@ -1,7 +1,7 @@
 {
   "name": "com.coplaydev.coplay",
   "displayName": "Coplay",
-  "version": "8.2.1",
+  "version": "8.3.0",
   "unity": "2022.3",
   "description": "AI copilot/assistant for game development.\n\nJoin our Discord: https://discord.gg/y4p8KfzrN4 \n\nWebsite: https://www.coplay.dev/ \n\nDocs: https://docs.coplay.dev/getting-started",
   "documentationUrl": "https://docs.coplay.dev/getting-started",
