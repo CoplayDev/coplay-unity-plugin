@@ -12,6 +12,7 @@
                 <!-- Right section - Settings buttons -->
                 <ui:VisualElement name="settings_bar_buttons" class="settings-buttons">
                     <ui:Button name="new_thread" text="\u002B" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="New Chat" class="toolbar font-large" />
+                    <ui:Button name="copy_all_messages" text="\uf0c5" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Copy all messages" class="toolbar font-large" />
                     <ui:Button name="history" text="\uf1da" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="History" class="toolbar font-large" />
                     <ui:Button name="settings" text="\uf7d9" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Settings" class="toolbar font-large" />
                     <ui:Button name="account" text="\uf007" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Account" class="toolbar font-large" />
@@ -23,6 +24,8 @@
                 <ui:Button name="update_button" text="Update available" display-tooltip-when-elided="true" class="update-button" />
             </ui:VisualElement>
         </ui:VisualElement>
+        <!-- Todo List Container -->
+        <ui:VisualElement name="todo_list_container" />
         <ui:ScrollView name="history" style="display: none;" />
         <ui:VisualElement name="settings_panel" />
         <ui:VisualElement name="account_panel" />
@@ -54,7 +57,7 @@
                 <ui:VisualElement name="chat_box" style="flex-grow: 1;">
                     <ui:ScrollView name="suggestions" />
                     <ui:Label name="orchestrator_instructions" enable-rich-text="true" text="In this mode, Coplay will read your `Assets/CoplayPlan.md` file then execute and update each task in sequence. You can edit the plan file to change the tasks." />
-                    <ui:TextField name="chat_input" select-word-by-double-click="false" placeholder-text="What can I help with?" multiline="true" vertical-scroller-visibility="auto" select-all-on-focus="false" style="color: rgb(255, 255, 255); width: auto; max-height: 200px; height: 100%; overflow: scroll; flex-grow: 1; flex-shrink: 1;" />
+                    <ui:TextField name="chat_input" select-word-by-double-click="false" max-length="100000" placeholder-text="What can I help with?" multiline="true" vertical-scroller-visibility="auto" select-all-on-focus="false" style="color: rgb(255, 255, 255); width: auto; max-height: 200px; height: 100%; overflow: scroll; flex-grow: 1; flex-shrink: 1;" />
                 </ui:VisualElement>
                 <ui:DropdownField name="iterations" choices="1,2,3,4,5" />
                 <ui:Button text="\uf138" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" name="submit" class="font-xlarge" />
@@ -81,29 +84,29 @@
         <!-- Status Bar -->
         <ui:Label tabindex="-1" text="Status..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="status" style="-unity-text-align: middle-center; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; color: rgb(101, 100, 100);" />
         <!-- Feedback Popup -->
-        <ui:VisualElement name="feedback_popup" style="border-radius: 5px; padding: 15px; top: 30%; flex-direction: column; align-items: stretch; justify-content: space-between; align-self: center; left: 10%; right: 10%; position: absolute; bottom: 30%; overflow: hidden; display: none; min-height: 250px;">
+        <ui:VisualElement name="feedback_popup" style="border-radius: 5px; padding: 15px; top: 30%; flex-direction: column; align-items: stretch; justify-content: space-between; align-self: center; left: 10%; right: 10%; position: absolute; bottom: 30%; overflow: hidden; display: none; min-height: 250px; max-height: 250px;">
             <ui:VisualElement style="flex-direction: row; justify-content: space-between; flex-shrink: 0; margin-bottom: 10px;">
                 <ui:Label text="Please tell us more about the reason for your feedback" name="feedback_title" class="font-medium" style="flex-shrink: 1; overflow: hidden; -unity-font-style: bold; flex-direction: row; align-items: center; -unity-text-align: middle-left;" />
                 <ui:Button name="close_popup_button" text="✕" class="font-large" style="background-color: transparent; border-width: 0; font-size: 16px; padding: 2px 5px; margin: 0; justify-content: flex-end; align-items: center; flex-direction: row-reverse;" />
             </ui:VisualElement>
-            <ui:VisualElement style="flex-shrink: 0; margin-bottom: 10px; flex-wrap: wrap;">
-                <ui:Toggle label="Not factually correct" name="feedback_option_1" class="feedback-toggle" style="flex-direction: row-reverse; justify-content: flex-end; flex-shrink: 1;" />
-                <ui:Toggle label="Not helpful" name="feedback_option_2" class="feedback-toggle" style="flex-direction: row-reverse; justify-content: flex-end; flex-shrink: 1;" />
-                <ui:Toggle label="Not following instructions" name="feedback_option_3" class="feedback-toggle" style="flex-direction: row-reverse; justify-content: flex-end; flex-shrink: 1;" />
-                <ui:Toggle label="Harmful or offensive" name="feedback_option_4" class="feedback-toggle" style="flex-direction: row-reverse; justify-content: flex-end; flex-shrink: 1;" />
-                <ui:Toggle label="Answer took too long" name="feedback_option_5" class="feedback-toggle" style="flex-direction: row-reverse; justify-content: flex-end; flex-shrink: 1;" />
+            <ui:VisualElement style="margin-bottom: 10px; flex-shrink: 1; flex-wrap: wrap;">
+                <ui:Toggle label="Not factually correct" name="feedback_option_1" class="feedback-toggle" style="flex-direction: row-reverse; justify-content: flex-end;" />
+                <ui:Toggle label="Not helpful" name="feedback_option_2" class="feedback-toggle" style="flex-direction: row-reverse; justify-content: flex-end;" />
+                <ui:Toggle label="Not following instructions" name="feedback_option_3" class="feedback-toggle" style="flex-direction: row-reverse; justify-content: flex-end;" />
+                <ui:Toggle label="Harmful or offensive" name="feedback_option_4" class="feedback-toggle" style="flex-direction: row-reverse; justify-content: flex-end;" />
+                <ui:Toggle label="Answer took too long" name="feedback_option_5" class="feedback-toggle" style="flex-direction: row-reverse; justify-content: flex-end;" />
             </ui:VisualElement>
-            <ui:VisualElement style="height: 100px; min-height: 20px; flex-shrink: 1; flex-grow: 1; margin-bottom: 10px;">
-                <ui:TextField name="feedback_comment" multiline="true" vertical-scroller-visibility="auto" placeholder-text="What&apos;s wrong? How can the response be improved?" style="border-radius: 3px; flex-direction: column; flex-shrink: 1; position: absolute; top: 0; left: 0; right: 0; bottom: 0; flex-grow: 1;" />
+            <ui:VisualElement style="min-height: 50px; flex-shrink: 1; flex-grow: 1; margin-bottom: 10px;">
+                <ui:TextField label="Feedback" name="feedback_comment" multiline="true" vertical-scroller-visibility="auto" placeholder-text="What&apos;s wrong? How can the response be improved?" style="border-radius: 3px; flex-direction: row; flex-shrink: 1; position: absolute; top: 0; left: 0; right: 0; bottom: 0; flex-grow: 1;" />
             </ui:VisualElement>
-            <ui:VisualElement name="thread_id_container" style="padding: 0 5px; flex-direction: row; align-items: center; flex-shrink: 0; overflow: hidden; padding-left: 2px; padding-right: 2px;">
-                <ui:Button name="copy_thread_id_button" text="Copy" tooltip="Send us this thread_id on discord to help debug this thread." style="width: 40px; height: 20px; margin-right: 4px; padding: 0; border-radius: 3px; background-color: rgba(149, 149, 149, 0.3); border-width: 0; font-size: 10px; flex-shrink: 0;" />
-                <ui:TextField name="thread_id_field" readonly="true" value="thread_id: " style="font-size: 8px; color: rgb(180, 180, 180); flex-grow: 1; background-color: rgba(0, 0, 0, 0); border-width: 0; flex-shrink: 1; justify-content: flex-end; align-content: flex-start; flex-direction: row;" />
+            <ui:VisualElement style="min-height: 20px; flex-shrink: 1; flex-grow: 1; margin-bottom: 10px;">
+                <ui:Toggle label="Include logs" name="feedback_include_logs" style="border-radius: 3px; flex-direction: row; flex-shrink: 1; position: absolute; top: 0; left: 0; right: 0; bottom: 0; flex-grow: 1;" />
+            </ui:VisualElement>
+            
+            <ui:VisualElement style="flex-shrink: 0; justify-content: flex-end; flex-direction: row;">
                 <ui:VisualElement class="feedback-discord-container" style="flex-shrink: 0; transform-origin: center; overflow: hidden;">
                     <ui:Button name="feedback_discord_button" tooltip="Go To Discord" class="discord-icon-button" style="transform-origin: 40% 40%; height: 24px; width: 26px;" />
                 </ui:VisualElement>
-            </ui:VisualElement>
-            <ui:VisualElement style="flex-shrink: 0; justify-content: flex-end; flex-direction: column;">
                 <ui:Button name="submit_feedback_button" text="Submit" style="padding: 5px 15px; border-radius: 3px;" />
             </ui:VisualElement>
         </ui:VisualElement>

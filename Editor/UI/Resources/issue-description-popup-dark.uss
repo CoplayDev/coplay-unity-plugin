@@ -1,0 +1,61 @@
+/* Issue Description Popup Window Dark Theme Styles */
+
+/* Root container */
+.issue-description-popup-root {
+    background-color: rgb(56, 56, 56);
+}
+
+/* Dialog title */
+.issue-description-popup-title {
+    color: rgb(255, 255, 255);
+}
+
+/* Dialog message */
+.issue-description-popup-message {
+    color: rgba(204, 204, 204, 1);
+}
+
+/* Issue description input field */
+.issue-description-popup-field {
+    background-color: rgb(40, 40, 40);
+    color: rgb(255, 255, 255);
+    border-top-color: rgba(77, 77, 77, 1);
+    border-right-color: rgba(77, 77, 77, 1);
+    border-bottom-color: rgba(77, 77, 77, 1);
+    border-left-color: rgba(77, 77, 77, 1);
+}
+
+.issue-description-popup-field:focus {
+    border-top-color: rgba(51, 153, 230, 1);
+    border-right-color: rgba(51, 153, 230, 1);
+    border-bottom-color: rgba(51, 153, 230, 1);
+    border-left-color: rgba(51, 153, 230, 1);
+}
+
+/* Cancel button */
+.issue-description-popup-cancel-button {
+    background-color: rgba(77, 77, 77, 1);
+    color: rgb(255, 255, 255);
+}
+
+.issue-description-popup-cancel-button:hover {
+    background-color: rgba(102, 102, 102, 1);
+}
+
+.issue-description-popup-cancel-button:active {
+    background-color: rgba(128, 128, 128, 1);
+}
+
+/* Send button */
+.issue-description-popup-send-button {
+    background-color: rgba(51, 153, 230, 1);
+    color: rgb(255, 255, 255);
+}
+
+.issue-description-popup-send-button:hover {
+    background-color: rgba(71, 173, 250, 1);
+}
+
+.issue-description-popup-send-button:active {
+    background-color: rgba(31, 133, 210, 1);
+}

@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="todo_item" class="todo-item">
+        <ui:Toggle name="todo_item_checkbox" class="todo-item-checkbox" />
+        <ui:Label name="todo_item_text" text="Task description" class="todo-item-text" />
+    </ui:VisualElement>
+</ui:UXML>

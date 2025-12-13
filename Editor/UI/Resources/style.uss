@@ -110,6 +110,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     border-left-width: 0;
 }
 
+
 #mode .unity-base-field__input {
     border-top-width: 0;
     border-right-width: 0;
@@ -326,7 +327,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 #feedback_buttons Button {
     border-width: 0;
     margin: 0;
-    padding: 2px 8px;
+    padding: 2px 5px;
     -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
     -unity-font-definition: initial;
     background-color: rgba(0,0,0,0);
@@ -754,6 +755,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     display: none;
     flex-shrink: 0;
     padding: 5px;
+    border-bottom-width: 5px;
 }
 
 #account_panel {
@@ -770,6 +772,12 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     padding: 5px;
     flex-direction: row;
     border-bottom-width: 1px;
+}
+
+/* Todo List Container Styles */
+#todo_list_container {
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 /* Messages and Thinking Styles */
@@ -1203,6 +1211,20 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     background-color: rgba(149, 149, 149, 0.7);
 }
 
+#copy_message_button {
+    border-width: 0;
+    margin: 5px 0 0 0;
+    padding: 2px 5px;
+    -unity-font: resource('Fonts/Font Awesome 6 Free-Solid-900');
+    -unity-font-definition: initial;
+    background-color: rgba(0,0,0,0);
+    cursor: Link;
+}
+
+#copy_all_messages {
+    margin-left: 4px;
+}
+
 /* Thread ID field styling - smaller font using fixed size */
 #thread_id_field {
     white-space: normal;
@@ -1230,7 +1252,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 .message-cost {
     font-size: 10px;
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
 #context_usage_bar VisualElement.unity-progress-bar__background {
@@ -1261,7 +1283,6 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     background-color: rgba(128, 128, 128, 0.3);
     border-top-width: 1px;
     border-top-color: rgba(128, 128, 128, 0.2);
-    border-top-style: dotted;
 }
 
 .checkpoint-restore-button {
@@ -1301,4 +1322,96 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
 
 .checkpoint-restore-button:active {
     background-color: rgba(80, 80, 80, 0.5);
+}
+
+/* Message context styles */
+#message_context {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgba(48, 47, 47, 0.3);
+}
+
+/* Message context items - reuse existing context item styles */
+#message_context .context-item {
+    flex-grow: 0;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(48, 47, 47, 0.84);
+    border-radius: 3px;
+    height: 20px;
+    width: auto;
+    min-width: 60px;
+    max-width: 150px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 3px;
+}
+
+#message_context .context-item Label {
+    font-size: 10px;
+    text-overflow: ellipsis;
+    color: rgb(197, 197, 197);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Message context image items */
+#message_context .image-context-item {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-color: rgba(48, 47, 47, 0.84);
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+#message_context .image-context-item .image-thumbnail {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: rgba(100, 100, 100, 0.5);
+    -unity-background-scale-mode: scale-and-crop;
+    border-width: 1px;
+    border-color: rgba(150, 150, 150, 0.3);
+}
+
+.coplay-tabbed-view__header Button.coplay-tabbed-view__header__button--active {
+    -unity-font-style: bold;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+}
+
+.coplay-tabbed-view__header Button:focus {
+    border-top-width: 2px;
+}
+
+.coplay-tabbed-view__header Button {
+    border-width: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.coplay-tabbed-view {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.coplay-tabbed-view__header {
+    flex-direction: row;
+}
+
+.coplay-tabbed-view__content {
+    padding-top: 5px;
+    flex-grow: 1;
 }
