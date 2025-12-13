@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 92f2a82d4d0e4c5b9612740cd7fe312b
+guid: 82b784b52836414aa7acc06b80742caa
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -7,7 +7,7 @@ PluginImporter:
   executionOrder: {}
   defineConstraints:
   - UNITY_2022_3_OR_NEWER
-  - !UNITY_6000_3_OR_NEWER
+  - '!UNITY_6000_3_OR_NEWER'
   isPreloaded: 0
   isOverridable: 0
   isExplicitlyReferenced: 0
