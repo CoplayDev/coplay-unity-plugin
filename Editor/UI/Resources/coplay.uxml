@@ -30,12 +30,12 @@
         <ui:VisualElement name="settings_panel" />
         <ui:VisualElement name="account_panel" />
         <ui:VisualElement name="pipeline_recording_panel" />
-        <ui:ScrollView name="messages" view-data-key="l">
-            <ui:VisualElement name="chat" style="flex-grow: 0; flex-shrink: 0;" />
+        <ui:VisualElement name="messages" view-data-key="l" style="flex-grow: 1; flex-shrink: 1;">
+            <ui:VisualElement name="chat" style="flex-grow: 1; flex-shrink: 1;" />
             <ui:VisualElement name="thinking" style="flex-grow: 0; padding: 10px; flex-shrink: 0; display: flex; flex-direction: row; align-items: center;">
                 <ui:Label text="Coplay is thinking" name="thinking_label" />
             </ui:VisualElement>
-        </ui:ScrollView>
+        </ui:VisualElement>
         <ui:VisualElement style="flex-grow: 0; flex-shrink: 0; align-items: center;">
             <ui:Button name="cancel_thinking">
                 <ui:Label name="icon" selectable="true" style="margin-top: 0; margin-right: 10px; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
