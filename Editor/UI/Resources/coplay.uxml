@@ -70,6 +70,10 @@
                 <ui:Label text="Auto-approve" display-tooltip-when-elided="true" style="-unity-font-style: normal; font-size: 12px;" />
             </ui:VisualElement>
             <ui:VisualElement style="flex-grow: 1;" />
+            <ui:VisualElement name="codemode_container" style="flex-grow: 0; flex-shrink: 0; flex-direction: row; align-items: center; margin-left: 5px; margin-right: 5px;">
+                <ui:Toggle name="codemode_toggle" value="false" tooltip="Enable this to call tools via code which may increase accuracy but is more expensive. Best for tasks that require lots of tool calls. Can only be changed at the start of a thread." style="margin-right: 2px;" />
+                <ui:Label text="Increase Accuracy" display-tooltip-when-elided="true" style="-unity-font-style: normal; font-size: 12px;" />
+            </ui:VisualElement>
             <ui:DropdownField index="2" choices="System.Collections.Generic.List`1[System.String]" name="mode" style="height: 30px; margin: 2px;" />
             <ui:DropdownField index="2" name="model" style="height: 30px; margin: 2px;" />
         </ui:VisualElement>
