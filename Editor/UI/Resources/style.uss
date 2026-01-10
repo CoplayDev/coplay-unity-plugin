@@ -49,14 +49,6 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     margin-bottom: 10px;
 }
 
-#chat .unity-list-view__item:hover {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-#chat .unity-list-view__empty-label {
-    display: none;
-}
-
 #chat_message_container {
     padding: 10px;
     margin: 5px 10px 5px 10px;
