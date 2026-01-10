@@ -30,12 +30,12 @@
         <ui:VisualElement name="settings_panel" />
         <ui:VisualElement name="account_panel" />
         <ui:VisualElement name="pipeline_recording_panel" />
-        <ui:ScrollView name="messages" view-data-key="l">
-            <ui:VisualElement name="chat" style="flex-grow: 0; flex-shrink: 0;" />
+        <ui:VisualElement name="messages" view-data-key="l" style="flex-grow: 1; flex-shrink: 1;">
+            <ui:VisualElement name="chat" style="flex-grow: 1; flex-shrink: 1;" />
             <ui:VisualElement name="thinking" style="flex-grow: 0; padding: 10px; flex-shrink: 0; display: flex; flex-direction: row; align-items: center;">
                 <ui:Label text="Coplay is thinking" name="thinking_label" />
             </ui:VisualElement>
-        </ui:ScrollView>
+        </ui:VisualElement>
         <ui:VisualElement style="flex-grow: 0; flex-shrink: 0; align-items: center;">
             <ui:Button name="cancel_thinking">
                 <ui:Label name="icon" selectable="true" style="margin-top: 0; margin-right: 10px; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
@@ -59,6 +59,7 @@
                     <ui:Label name="orchestrator_instructions" enable-rich-text="true" text="In this mode, Coplay will read your `Assets/CoplayPlan.md` file then execute and update each task in sequence. You can edit the plan file to change the tasks." />
                     <ui:TextField name="chat_input" select-word-by-double-click="false" max-length="100000" placeholder-text="What can I help with?" multiline="true" vertical-scroller-visibility="auto" select-all-on-focus="false" style="color: rgb(255, 255, 255); width: auto; max-height: 200px; height: 100%; overflow: scroll; flex-grow: 1; flex-shrink: 1;" />
                 </ui:VisualElement>
+                <ui:DropdownField name="iterations" choices="1,2,3,4,5" />
                 <ui:Button text="\uf138" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" name="submit" class="font-xlarge" />
             </ui:VisualElement>
         </ui:VisualElement>
