@@ -1091,6 +1091,8 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     font-size: var(--coplay-small-font);
     -unity-font: resource("Fonts/RobotoMono-Regular");
     -unity-font-definition: resource("Fonts/RobotoMono-Regular");
+    max-height: 80px;
+    overflow: hidden;
 }
 
 .diff-search-field TextInput {
@@ -1098,6 +1100,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     color: rgba(180, 180, 180, 1);
     border-width: 0;
     padding: 4px;
+    white-space: normal;
 }
 
 .diff-replace-field {
@@ -1109,6 +1112,8 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     font-size: var(--coplay-small-font);
     -unity-font: resource("Fonts/RobotoMono-Regular");
     -unity-font-definition: resource("Fonts/RobotoMono-Regular");
+    max-height: 80px;
+    overflow: hidden;
 }
 
 .diff-replace-field TextInput {
@@ -1116,6 +1121,7 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     color: rgba(230, 230, 230, 1);
     border-width: 0;
     padding: 4px;
+    white-space: normal;
 }
 
 .diff-replace-field:focus TextInput {
