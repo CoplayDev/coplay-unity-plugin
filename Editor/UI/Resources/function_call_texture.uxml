@@ -28,5 +28,10 @@
                 <ui:Button name="cancel_button" text="✕" tooltip="Cancel" />
             </ui:VisualElement>
         </ui:VisualElement>
+        
+        <!-- Cost container for generation functions -->
+        <ui:VisualElement name="cost_container" style="display: none;">
+            <ui:Label name="function_cost_label" class="function-cost-label" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

@@ -1261,6 +1261,12 @@ Label, TextField, Button, Toggle, Slider, IntegerField {
     margin-top: 8px;
 }
 
+.function-cost-label {
+    font-size: 10px;
+    color: rgba(180, 180, 180, 0.8);
+    margin-top: 4px;
+}
+
 #context_usage_bar VisualElement.unity-progress-bar__background {
     border-radius: 5px;
 }
