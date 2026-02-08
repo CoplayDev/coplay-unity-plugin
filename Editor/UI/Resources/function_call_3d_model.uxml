@@ -20,7 +20,8 @@
             <!-- Extra options container -->
             <ui:VisualElement name="extra_options_container" class="function_execution_extra_button_container">
                 <ui:DropdownField name="provider_dropdown" label="Provider" />
-                
+                <uie:IntegerField name="target_polycount_field" label="Target Polycount" value="30000" />
+
                 <!-- Enhanced Prompt container -->
                 <ui:VisualElement name="prompt_container" style="flex-direction: column; flex-grow: 1; width: 100%; display: none;">
                     <ui:TextField name="prompt_field" label="Enhanced Prompt" multiline="true" style="height: 60px; flex-grow: 1; max-height: 150px;" />
