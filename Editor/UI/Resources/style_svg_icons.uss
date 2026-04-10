@@ -1,0 +1,100 @@
+/*
+ * Unity 6+ only icon overrides.
+ * Loaded conditionally from ChatView via SupportsSvgToolbarIcons() and paired with
+ * the "use-svg-icons" root class so Unity 2022 keeps font-based fallback icons.
+ */
+.use-svg-icons #submit.stop-button {
+    background-image: url('Icons/toolbar_stop.svg');
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: #D9534F;
+    color: rgba(0, 0, 0, 0);
+}
+
+.use-svg-icons #submit {
+    background-image: url('Icons/toolbar_send.svg');
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgba(230, 230, 230, 1);
+    color: rgba(0, 0, 0, 0);
+}
+
+.use-svg-icons .toolbar {
+    color: rgba(0, 0, 0, 0);
+}
+
+.use-svg-icons .settings-buttons #new_thread {
+    background-image: url('Icons/toolbar_plus.svg');
+}
+
+.use-svg-icons .settings-buttons #copy_all_messages {
+    background-image: url('Icons/toolbar_copy.svg');
+}
+
+.use-svg-icons .settings-buttons #history {
+    background-image: url('Icons/toolbar_history.svg');
+}
+
+.use-svg-icons .settings-buttons #settings {
+    background-image: url('Icons/toolbar_settings.svg');
+}
+
+.use-svg-icons .settings-buttons #account {
+    background-image: url('Icons/toolbar_user.svg');
+}
+
+/* Chat message button icon overrides */
+.use-svg-icons #copy_message_button {
+    background-image: url('Icons/msg_copy.svg');
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgba(155, 155, 155, 1);
+    color: rgba(0, 0, 0, 0);
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+.use-svg-icons #copy_message_button:hover {
+    background-image: url('Icons/msg_copy_filled.svg');
+    -unity-background-image-tint-color: rgba(255, 255, 255, 1);
+    cursor: Link;
+}
+
+.use-svg-icons #feedback_buttons Button {
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgba(155, 155, 155, 1);
+    color: rgba(0, 0, 0, 0);
+    width: 14px;
+    height: 14px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.use-svg-icons #feedback_buttons Button:hover {
+    -unity-background-image-tint-color: rgba(255, 255, 255, 1);
+    cursor: Link;
+}
+
+.use-svg-icons #like_button {
+    background-image: url('Icons/msg_thumbs_up.svg');
+}
+
+.use-svg-icons #like_button:hover {
+    background-image: url('Icons/msg_thumbs_up_filled.svg');
+}
+
+.use-svg-icons #dislike_button {
+    background-image: url('Icons/msg_thumbs_down.svg');
+}
+
+.use-svg-icons #dislike_button:hover {
+    background-image: url('Icons/msg_thumbs_down_filled.svg');
+}
+
+.use-svg-icons #like_button.feedback-selected {
+    background-image: url('Icons/msg_thumbs_up_filled.svg');
+    -unity-background-image-tint-color: rgba(255, 255, 255, 1);
+}
+
+.use-svg-icons #dislike_button.feedback-selected {
+    background-image: url('Icons/msg_thumbs_down_filled.svg');
+    -unity-background-image-tint-color: rgba(255, 255, 255, 1);
+}
