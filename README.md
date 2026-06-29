@@ -8,6 +8,11 @@
 </a>
 </p>
 
+> [!IMPORTANT]
+> **Coplay has been acquired and is now [Aura](https://www.tryaura.dev/)** — the first AI agent for Unity and Unreal Engine.
+> Install it at **[tryaura.dev](https://www.tryaura.dev/)**.
+> Read the announcement: [Ramen acquires Coplay](https://www.tryaura.dev/updates/ramen-acquires-coplay-making-aura-the-first-ai-agent-for-unity-and-unreal-engine).
+
 Coplay is an AI Copilot for Unity. It provides a natural language interface that allows you to control Unity for executing actions and automate repetitive, tedious tasks.
 
 Learn more about Coplay here: <https://coplay.dev>
